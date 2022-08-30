@@ -1,0 +1,21 @@
+{
+    "version": 1,
+    "storageDriverName": "azure-netapp-files",
+    "subscriptionID": "",
+    "tenantID": "",
+    "clientID": "",
+    "clientSecret": "",
+    "location": "uksouth",
+    "netappAccounts": ["core-south-uk"],
+    "capacityPools": ["test-subvol"],
+    "serviceLevel": "Standard",
+    "virtualNetwork": "aks-vnet-51083512",
+    "subnet": "ANF-delegated",
+    "nfsMountOptions": "vers=3,proto=tcp,timeo=600",
+    "limitVolumeSize": "500Gi",
+    "defaults": {
+        "exportRule": "0.0.0.0/0",
+        "size": "200Gi"
+    }
+}
+

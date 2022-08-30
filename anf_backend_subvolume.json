@@ -1,0 +1,19 @@
+{ 
+  "version": 1, 
+  "storageDriverName": "azure-netapp-files-subvolume", 
+  "storagePrefix": "subvolume", 
+  "backendName": "subvolume-backend", 
+  "location": "uksouth", 
+  "subscriptionID": "", 
+  "tenantID": "", 
+  "clientID": "", 
+  "clientSecret": "",
+  "serviceLevel": "Standard",
+  "virtualNetwork": "aks-vnet-51083512",
+  "subnet": "ANF-delegated",
+  "nfsMountOptions": "nfsvers=3",
+  "unixPermissions": "0777",
+  "resourceGroups": ["emea-core-south-uk-anf"],
+  "netappAccounts": ["core-south-uk"],
+  "filePoolVolumes": ["/emea-core-south-uk-anf/core-south-uk/test-subvol/ANF-subvolume-parent"]
+}  
